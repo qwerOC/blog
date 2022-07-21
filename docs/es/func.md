@@ -8,7 +8,9 @@
 
 ## 普通函数
 
-谁调用 函数 关键字 **this** 就指向谁
+谁调用 函数 关键字 `this` 就指向谁
+
+`谁.`的函数 this 就指向谁
 
 ```js
 function fun1(){
@@ -41,10 +43,25 @@ obj.run();
 obj.eat();
 ```
 
+```javascript
+const obj = {
+  	name:'xxx',
+  	prop:{
+    	getAge:function(){
+          console.log('name'+ this.name); 
+    }
+  }
+}
+    console.log('1'+obj.prop.getAge()); // unfedined this=> obj.prop
+const a = obj.prop.getAge;
+    console.log('2'+a()); // undefined this=> window
+
+```
+
 ## 箭头函数(ES6)
 
-1. 箭头函数中**没有this**
-2. 外层函数中的 this 指向谁 箭头函数中的 this 就指向谁 
+1. 箭头函数中`没有this`
+2. 外层函数中的 `this` 指向谁 箭头函数中的 `this` 就指向谁 
 
 ```js
 const obj = {
@@ -73,7 +90,7 @@ obj.play();
 
 ## new 关键字做了什么
 
-new **创建对象** 将构造函数中的对象绑定到 **this**
+new `创建对象` 将构造函数中的对象绑定到 `this`
 
 ### Dom 中的元素 绑定函数 
 

@@ -1,6 +1,6 @@
 ## let && var
 ---
-1. **let** 声明的属性 不会作用到 **window** 而 **var** 可以
+1. `let` 声明的属性 不会作用到 `window` 而 `var` 可以
 ```js
 <script>
 let age = 10;
@@ -9,7 +9,7 @@ var sex = '男'
 console.log(window.sex);// 男
 </script>
 ```
-2. **var** 允许在相同作用域中声明 **同名** 变量 **let** 不可以
+2. `var` 允许在相同作用域中声明 `同名` 变量 `let` 不可以
 ```js
 var a = 10;
 var a = 20;
@@ -18,7 +18,7 @@ console.log(a); // 20
 let b = 10;
 let b /// 报错SyntaxError: Identifier 'me' has already been declared
 ```
-3. **let** 是块级作用域中 **var** 是函数作用域
+3. `let` 是`块级作用域`   `var` 是 `函数作用域`
 ```js
 // 块级别 作用域
 function  aFun1(){

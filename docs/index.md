@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: 👀
-      link: /main
+      link: /es/index
 
 
 features:
