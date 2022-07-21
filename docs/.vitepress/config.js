@@ -40,7 +40,8 @@ module.exports = {
                         {text:'数据类型',link: '/es/'},
                         {text:'let&var&const',link: '/es/modified.md'},
                         {text:'函数&this',link: '/es/func.md'},
-                        {text:'修改this指向',link: '/es/modifyThis.md'}
+                        {text:'修改this指向',link: '/es/modifyThis.md'},
+                        {text:'闭包',link: '/es/closure.md'}
                     ]
                 }
                 
