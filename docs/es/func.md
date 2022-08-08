@@ -62,6 +62,7 @@ const a = obj.prop.getAge;
 
 1. 箭头函数中`没有this`
 2. 外层函数中的 `this` 指向谁 箭头函数中的 `this` 就指向谁 
+3. 箭头函数还没有自己的argments,有也只是父作用域的
 
 ```js
 const obj = {
@@ -86,6 +87,16 @@ const obj = {
 }
 obj.eat();
 obj.play();
+
+// 第三点补充
+const func = ()=>{
+     console.log('args:'+ args);// ReferenceError: args is not defined
+}
+const func2 = (...args)=>{
+     const [a,b,c] = args; // 分开打印
+     console.log('args:'+ args);// args:1,2,3
+}
+func(1,2,3)
 ```
 
 ## new 关键字做了什么
