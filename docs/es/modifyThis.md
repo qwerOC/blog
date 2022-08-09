@@ -112,7 +112,6 @@ Function.prototype.call2 = function(){
     return result
 }
 ```
-
 ## 文档查阅
 
 [Call 和 apply 实现](https://github.com/mqyqingfeng/Blog/issues/11 )

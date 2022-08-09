@@ -26,7 +26,7 @@ module.exports = {
         // 右边侧栏
         // 导航栏配置
         nav:[
-            {text: 'ES', link: '/es/' },
+            {text: 'ES&JS', link: '/es/' },
             {text: 'CSS', link: '/css/'},
             {text: 'TypeScript', link: '/TypeScript/'}
         ],
@@ -41,7 +41,8 @@ module.exports = {
                         {text:'let&var&const',link: '/es/modified.md'},
                         {text:'函数&this',link: '/es/func.md'},
                         {text:'修改this指向',link: '/es/modifyThis.md'},
-                        {text:'闭包',link: '/es/closure.md'}
+                        {text:'闭包',link: '/es/closure.md'},
+                        {text:'数据类型检测',link: '/es/dataType.md'}
                     ]
                 }
                 

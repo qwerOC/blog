@@ -105,7 +105,7 @@ new `创建对象` 将构造函数中的对象绑定到 `this`
 
 ### Dom 中的元素 绑定函数 
 
-```
+```javascript
 <button>按钮</button>
 const btn = document.querySelector('button');
 btn.onclick = function(){
